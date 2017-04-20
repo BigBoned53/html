@@ -109,5 +109,7 @@ searchWidgetCloseImg.addEventListener("click",
 searchButton.addEventListener("click",
     function() {
       searchWidget.style.display = "block"
-      document.getElementById("gsc-i-id1").placeholder = placeholderText
+      var searchInput = document.getElementById("gsc-i-id1");
+      searchInput.placeholder = placeholderText
+      searchInput.focus()
     })
